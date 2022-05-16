@@ -225,7 +225,7 @@ void LEDmanager(void * pvParameters){
         Serial.println("Driving Mode");
         if(prevAcceleration > acceleration){
             FastLED.setBrightness(150);
-            fill_solid( leds, NUM_LEDS, CRGB(0 , 255 , 0));
+            fill_solid( leds, NUM_LEDS, CRGB(255 , 0 , 0));
             FastLED.show(); 
           }
         else{
